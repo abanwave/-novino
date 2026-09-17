@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نوشت افزار نوینو</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css ">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="./css/footer.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="header__nav">
+        <a href="#" class="header__logo">
+            <img
+            class="header__logo--img"
+            src="./assets/images/logo copy2.png"
+            alt="novino"
+            />
+        </a>
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="#">خانه</a></li>
+          <li class="header__nav-item"><a href="#">فروشگاه</a></li>
+          <li class="header__nav-item"><a href="#">دسته بندی ها</a></li>
+          <li class="header__nav-item"><a href="#">درباره ما</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <div class="header__shopping-card">
+          <a href="#" >سبد خرید</a>
+          <span>.2</span>
+        </div>
+        <a href="./register.html" class="header__login">ورود</a>
+      </div>
+    </header>
+    <section class="home-page">
+      <div class="home-page__path">
+        <a href="#">خانه</a>
+        <span>/</span>
+        <a href="#">فروشگاه</a>
+      </div>
+      <div class="home-page__tile">
+        <h1>فروشگاه</h1>
+      </div>
+      <div class="home-page__describe">
+        <span>محصولات منتخب را با خیال راحت مقایسه و انتخاب کنید.</span>
+      </div>
+    </section>
+    <div class="shop-content">
+      <!-- sidebar -->
+      <aside class="sidebar">
+        <h2>فیلتر محصولات</h2>
+        <section class="sidebar__section">
+          <h3>دسته بندی</h3>
+          <div class="sidebar__section--input">
+            <input type="checkbox" id="colored-pencil" />
+            <label for="colored-pencil">مداد رنگی</label>
+          </div>
+          <div class="sidebar__section--input">
+            <input type="checkbox" id="oil-color" />
+            <label for="oil-color">رنگ روغن</label>
+          </div>
+          <div class="sidebar__section--input">
+            <input type="checkbox" id="pastel" />
+            <label for="pastel">پاستل</label>
+          </div>
+        </section>
+        <section class="sidebar__section">
+          <h3>محدوده قیمت</h3>
+          <div class="sidebar__section--input">
+            <input type="radio" id="1mil" name="price-filter" />
+            <label for="1mil">کمتر از ۱ ملیون</label>
+          </div>
+          <div class="sidebar__section--input">
+            <input type="radio" id="1mil-3mil" name="price-filter" />
+            <label for="1mil-3mil">بین ۱ تا ۳ ملیون</label>
+          </div>
+          <div class="sidebar__section--input">
+            <input type="radio" id="3mil" name="price-filter" />
+            <label for="3mil">بیشتر از ۳ ملیون</label>
+          </div>
+        </section>
+        <section class="sidebar__section">
+          <h3>امتیاز کاربران</h3>
+          <div class="sidebar__section--input">
+            <input type="checkbox" id="rank4" />
+            <label for="rank4">۴ ستاره به بالا</label>
+          </div>
+        </section>
+      </aside>
+      <!-- main -->
+      <main class="main">
+        <div class="main__search">
+          <input type="search" placeholder="جست و جو در محصولات..." name=" />
+        </div>
+        <div class="main__sort">
+          <span>مرتب سازی: پرفروش</span>
+          <span>نمایش ۶ محصول</span>
+        </div>
+        <section class="main__products">
+          <article class="products-card">
+            <a href="./product.html" class="products-card__link">
+              <div class="products-card__img">
+                <img
+                  class="products-card__img--iner"
+                  src="./assets/images/factic.jpg"
+                  alt="مداد رنگی فکتیس ۲۴ رنگ جعبه فلز،src=https://www.mrtahrir.com/"
+                />
+              </div>
+              <div class="products-card__describe">
+                <div class="products-card__describe--price-name">
+                <div class="products-card__describe--delivery">
+                  <span>ارسال رایگان</span>                
+                </div>                
+                  <h3>مداد رنگی فکتیس ۲۴ رنگ جعبه فلز</h3>
+                  <span>۳۱۲,۰۰۰ تومان</span>
+                </div>
+                <div class="products-card__describe--rank">
+                  <i class="fa-solid fa-star"></i>
+                  <span>۴/۵</span>
+                </div>
+              </div>
+            </a>
+          </article>     
+          <article class="products-card">
+            <a href="#" class="products-card__link">
+              <div class="products-card__img">
+                <img
+                  class="products-card__img--iner"
+                  src="./assets/images/103007002photoB.jpg"
+                  alt="گواش پالمو ۱۲ رنگ"
+                />
+              </div>
+              <div class="products-card__describe">
+                <div class="products-card__describe--price-name">
+                <div class="products-card__describe--delivery">
+                  <span>ارسال رایگان</span>                
+                </div>                
+                  <h3>گواش پالمو ۱۲ رنگ</h3>
+                  <span>۴۱۰,۰۰۰ تومان</span>
+                </div>
+                <div class="products-card__describe--rank">
+                  <i class="fa-solid fa-star"></i>
+                  <span>۳/۷</span>
+                </div>
+              </div>
+            </a>
+          </article> 
+          <article class="products-card">
+            <a href="#" class="products-card__link">
+              <div class="products-card__img">
+                <img
+                  class="products-card__img--iner"
+                  src="./assets/images/103001003.jpg"
+                  alt="آبرنگ پنتر ۱۲ رنگ"
+                />
+              </div>
+              <div class="products-card__describe">
+                <div class="products-card__describe--price-name">
+                <div class="products-card__describe--delivery">
+                  <span>ارسال رایگان</span>                
+                </div>                
+                  <h3>آبرنگ پنتر ۱۲ رنگ</h3>
+                  <span>۴۲۰,۰۰۰ تومان</span>
+                </div>
+                <div class="products-card__describe--rank">
+                  <i class="fa-solid fa-star"></i>
+                  <span>۴</span>
+                </div>
+              </div>
+            </a>
+          </article>   
+          <article class="products-card">
+            <a href="#" class="products-card__link">
+              <div class="products-card__img">
+                <img
+                  class="products-card__img--iner"
+                  src="./assets/images/102005028.jpg"
+                  alt="دفتر نقاشی ۵۰ برگ سیمی طلقی وزیری اسپادانا"
+                />
+              </div>
+              <div class="products-card__describe">
+                <div class="products-card__describe--price-name">
+                <div class="products-card__describe--delivery">
+                  <span>ارسال رایگان</span>                
+                </div>                
+                  <h3>دفتر نقاشی ۵۰ برگ سیمی طلقی وزیری اسپادانا</h3>
+                  <span>۱۱۵,۰۰۰ تومان</span>
+                </div>
+                <div class="products-card__describe--rank">
+                  <i class="fa-solid fa-star"></i>
+                  <span>۴/۱</span>
+                </div>
+              </div>
+            </a>
+          </article>   
+          <article class="products-card">
+            <a href="#" class="products-card__link">
+              <div class="products-card__img">
+                <img
+                  class="products-card__img--iner"
+                  src="./assets/images/103008035photoB.jpg"
+                  alt="ماژیک نقاشی کد ۳۰۱۶"
+                />
+              </div>
+              <div class="products-card__describe">
+                <div class="products-card__describe--price-name">
+                <div class="products-card__describe--delivery">
+                  <span>ارسال رایگان</span>                
+                </div>                
+                  <h3>ماژیک نقاشی کد ۳۰۱۶</h3>
+                  <span>۳۸۰,۰۰۰ تومان</span>
+                </div>
+                <div class="products-card__describe--rank">
+                  <i class="fa-solid fa-star"></i>
+                  <span>۵</span>
+                </div>
+              </div>
+            </a>
+          </article>   
+          <article class="products-card">
+            <a href="#" class="products-card__link">
+              <div class="products-card__img">
+                <img
+                  class="products-card__img--iner"
+                  src="./assets/images/107010082.jpg"
+                  alt="تراش مخزن دار سی کلاس"
+                />
+              </div>
+              <div class="products-card__describe">
+                <div class="products-card__describe--price-name">
+                <div class="products-card__describe--delivery">
+                  <span>ارسال رایگان</span>                
+                </div>                
+                  <h3>تراش مخزن دار سی کلاس</h3>
+                  <span>۹۰,۰۰۰  تومان</span>
+                </div>
+                <div class="products-card__describe--rank">
+                  <i class="fa-solid fa-star"></i>
+                  <span>۳/۲</span>
+                </div>
+              </div>
+            </a>
+          </article>   
+          <article class="products-card">
+            <a href="#" class="products-card__link">
+              <div class="products-card__img">
+                <img
+                  class="products-card__img--iner"
+                  src="./assets/images/101007050-6 قهوه ای.jpg"
+                  alt="مداد مشکی پرودن ۱۲ عددی"
+                />
+              </div>
+              <div class="products-card__describe">
+                <div class="products-card__describe--price-name">
+                <div class="products-card__describe--delivery">
+                  <span>ارسال رایگان</span>                
+                </div>                
+                  <h3>مداد مشکی پرودن ۱۲ عددی</h3>
+                  <span>۴۲۰,۰۰۰ تومان</span>
+                </div>
+                <div class="products-card__describe--rank">
+                  <i class="fa-solid fa-star"></i>
+                  <span>۴</span>
+                </div>
+              </div>
+            </a>
+          </article> 
+          <article class="products-card">
+            <a href="#" class="products-card__link">
+              <div class="products-card__img">
+                <img
+                  class="products-card__img--iner"
+                  src="./assets/images/107020056photoA.jpg"
+                  alt="ساعت دیجیتال رومیزی"
+                />
+              </div>
+              <div class="products-card__describe">
+                <div class="products-card__describe--price-name">
+                <div class="products-card__describe--delivery">
+                  <span>ارسال رایگان</span>                
+                </div>                
+                  <h3>ساعت دیجیتال رومیزی</h3>
+                  <span>۱,۵۷۰,۰۰۰ تومان</span>
+                </div>
+                <div class="products-card__describe--rank">
+                  <i class="fa-solid fa-star"></i>
+                  <span>۴/۵</span>
+                </div>
+              </div>
+            </a>
+          </article>    
+          <article class="products-card">
+            <a href="#" class="products-card__link">
+              <div class="products-card__img">
+                <img
+                  class="products-card__img--iner"
+                  src="./assets/images/101002044.jpg"
+                  alt="مداد رنگی فکتیس  ۲۴ رنگ استوانه ای"
+                />
+              </div>
+              <div class="products-card__describe">
+                <div class="products-card__describe--price-name">
+                <div class="products-card__describe--delivery">
+                  <span>ارسال رایگان</span>                
+                </div>                
+                  <h3>مداد رنگی فکتیس  ۲۴ رنگ استوانه ای</h3>
+                  <span>۹۵۰,۰۰۰ تومان</span>
+                </div>
+                <div class="products-card__describe--rank">
+                  <i class="fa-solid fa-star"></i>
+                  <span>۴/۷</span>
+                </div>
+              </div>
+            </a>
+          </article>  
+                                                                                                                 
+        </section>
+      </main>
+
+    </div>
+    <!-- Footer -->    
+     <footer class="footer">
+        <div>
+          <span>نوينو؛خرید ساده و مطمئن</span>
+        </div>
+        <div>
+          <a href="#">پشتیبانی.</a>
+          <a href="#">قوانین و شرایط.</a>
+          <a href="#">اینستاگرام</a>
+        </div>
+        <div>
+          <span>1405 &copy;</span>
+        </div>
+     </footer>
+  </body>
+</html>

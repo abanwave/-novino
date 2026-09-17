@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Vazirmatn";
+    src: url("../assets/fonts/Lora-Vazirmatn/Vazirmatn/Vazirmatn-VariableFont_wght.ttf") format(truetype) ;
+    font-weight: 100 800;
+}
+
+:root {
+    --font-main: "Vazirmatn" , sans-serif;
+}
+
+:root{
+    /*colors*/
+    --color-primary: #0F766E;
+    --color-accent: #F59E0B;
+    --color-text: #14213D;
+    --color-second-text: #828FAE;
+    --color-background: #F8FAFC;
+    --color-background-footer:#14213D;
+    --color-card: #FFFFFF;
+    --color-border: #E5E7EB;
+    /*form*/
+    --color-valid: #0F766E;
+    --color-invalid: #DC2626; 
+    --color-focus: #16A34A;
+    /*shape $ shadow*/
+    --radius : 16px;
+    --shadow : 0 4px 12px rgba(0, 0, 0, 0.08);
+    /*typography*/
+    --font-weight-title: 400;
+    --font-weight-section: 600;
+    --font-weight-paragrag: 700;
+    /* Distance */
+    --space-base:8px; 
+    --space-second: 16px;
+    --space-third: 24px;
+    --space-fourth: 32px;
+    --space-fifth: 48px;
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --color-primary: #2DD4BF;
+        --color-background: #0F172A;
+        --color-background-footer: #020617;
+        --color-card: #1E293B;
+        --color-text:#E2E8F0;
+        --color-border: #2B384B;
+    }
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    font-family: var(--font-main);
+    background-color: var(--color-background);
+}
+
+.footer {
+    margin-top: auto;
+}
+
+*{
+    outline-color: var(--color-focus);  
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: var(--color-card);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: var(--color-primary);
+}
+
+  

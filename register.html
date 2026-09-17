@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./css/footer.css">    
+</head>
+<body>
+        <!-- Header -->
+    <header class="header">
+      <nav class="header__nav">
+        <a href="#" class="header__logo">
+            <img
+            class="header__logo--img"
+            src="./assets/images/logo copy2.png"
+            alt="novino"
+            />
+        </a>
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="#">خانه</a></li>
+          <li class="header__nav-item"><a href="#">فروشگاه</a></li>
+          <li class="header__nav-item"><a href="#">دسته بندی ها</a></li>
+          <li class="header__nav-item"><a href="#">درباره ما</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <div class="header__shopping-card">
+          <a href="#" >سبد خرید</a>
+          <span>.2</span>
+        </div>
+        <a href="./register.html" class="header__login">ورود</a>
+      </div>
+    </header>
+    <!-- register -->
+    <form action="" class="register-form">
+        <div class="form-title">
+        <h1>ساخت حساب کاربری</h1>
+        <h2>برای خرید سریع تر، حساب نوینو را بسازید</h2>
+        </div>
+        <div class="form-item">
+            <label for="mail">ایمیل</label>
+            <input type="email" name="email" id="mail" placeholder="name@example.com" required>
+            <label for="num">شماره همراه</label>
+            <input type="tel" name="number" id="num"  minlength="11" maxlength="11" pattern="(09[0-9]{9}|۰۹[۰-۹]{9})" placeholder="09122456789" required>
+            <label for="pass">رمز عبور</label>
+            <input type="password" name="password" id="pass" minlength="8" maxlength="64" placeholder="حداقل ۸ کاراکتر" required>
+            <label for="repass">تکرار رمز عبور</label>
+            <input type="password" name="repet-password" id="repass" minlength="8" maxlength="64" placeholder="رمز عبور را دوباره وارد کنید" required>
+        </div>
+        <div class="form-button">
+            <button type="reset">پاک کردن</button>
+            <button type="submit">ثبت نام</button>
+        </div>
+    </form>
+    <!-- Footer -->    
+     <footer class="footer">
+        <div>
+          <span>نوينو؛خرید ساده و مطمئن</span>
+        </div>
+        <div>
+          <a href="#">پشتیبانی.</a>
+          <a href="#">قوانین و شرایط.</a>
+          <a href="#">اینستاگرام</a>
+        </div>
+        <div>
+          <span>1405 &copy;</span>
+        </div>
+     </footer>    
+</body>
+</html>
